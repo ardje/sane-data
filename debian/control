@@ -1,0 +1,15 @@
+Source: sane-date
+Section: admin
+Priority: optional
+Maintainer: ard <ard@kwaak.net>
+Build-Depends: debhelper (>=9.0.0)
+Standards-Version: 3.9.5
+Homepage: http://www.kwaak.net/
+
+Package: sane-date
+Architecture: all
+Depends: ${misc:Depends}
+Description: Boot with a sane-date on RTC less machines
+ Tries to set a decent date on RTC less machines. Uses a compiled in default,
+ the change date of syslog or the change date of /bin/dash. Whichever is newest.
+ A sane date is needed for a lot of certificate checking.

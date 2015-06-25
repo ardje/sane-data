@@ -1,0 +1,10 @@
+#!/bin/sh
+CT="$(date +%s)"
+D1="$(stat -c "%Z" /bin/dash)"
+D2="$(stat -c "%Z" /var/log/syslog)"
+D3=1435228659
+ND="${CT}"
+[ "$ND" -lt "$D3" ] && ND="$D3"
+[ "$ND" -lt "$D2" ] && ND="$D2"
+[ "$ND" -lt "$D1" ] && ND="$D1"
+[ "$ND" -gt "$CT" ] && date --set="@${ND}"
