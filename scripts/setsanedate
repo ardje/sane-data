@@ -9,3 +9,4 @@ ND="${CT}"
 [ "$ND" -lt "$D2" ] && ND="$D2"
 [ "$ND" -lt "$D1" ] && ND="$D1"
 [ "$ND" -gt "$CT" ] && date --set="@${ND}"
+exit 0
