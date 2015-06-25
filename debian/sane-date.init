@@ -2,6 +2,7 @@
 ### BEGIN INIT INFO
 # Provides:          sane-date
 # Required-Start:    $local_fs
+# Required-Stop:
 # Default-Start:     S
 # Default-Stop:
 # Short-Description: Set time and date to a current one
