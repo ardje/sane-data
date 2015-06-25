@@ -1,4 +1,5 @@
 #!/bin/sh
+PATH=/bin:/usr/bin
 CT="$(date +%s)"
 D1="$(stat -c "%Z" /bin/dash)"
 D2="$(stat -c "%Z" /var/log/syslog)"
