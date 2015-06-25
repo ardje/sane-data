@@ -1,0 +1,48 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          sane-date
+# Required-Start:    $local_fs
+# Default-Start:     S
+# Default-Stop:
+# Short-Description: Set time and date to a current one
+# Description:       Sets current date and time to a something
+#                    that is a little bit more current.
+#                    Needed if RTC's are unavailable and
+#                    certificates need to be checked before a
+#                    networked timesource is available.
+### END INIT INFO
+
+PATH=/sbin:/bin
+. /lib/init/vars.sh
+. /lib/lsb/init-functions
+
+do_start () {
+        /sbin/setsanedate
+}
+do_status() {
+	test "$(date +%s)" -gt 1435228659 
+}
+
+case "$1" in
+  start|"")
+        do_start
+        ;;
+  restart|reload|force-reload)
+        echo "Error: argument '$1' not supported" >&2
+        exit 3
+        ;;
+  stop)
+        # No-op
+        ;;
+  status)
+        do_status
+        exit $?
+        ;;
+  *)
+        echo "Usage: sane-date [start|stop]" >&2
+        exit 3
+        ;;
+esac
+
+:
+
