@@ -1,3 +1,15 @@
+sane-date (1.2) unstable; urgency=low
+
+  * Aargh, copyright :-(
+
+ -- ard <ard@kwaak.net>  Thu, 25 Jun 2015 15:56:22 +0200
+
+sane-date (1.1) unstable; urgency=low
+
+  * Add upstart files for ubuntu
+
+ -- ard <ard@kwaak.net>  Thu, 25 Jun 2015 13:50:49 +0000
+
 sane-date (1.0) unstable; urgency=low
 
   * Initial Release.

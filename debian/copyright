@@ -1,12 +1,8 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: hb-scripts
+Upstream-Name: sane-date
 Source: http://www.drgt.com
 
 Files: *
-Copyright: 2014-2015 DR gaming technology
-License: DRGT-internal
-
-Files: debian/*
 Copyright: 2015 ard <ard@kwaak.net>
 License: GPL-3.0+
 
@@ -26,6 +22,3 @@ License: GPL-3.0+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
-
-License: DRGT-internal
- This program is proprietary. It should not be used on non-DRGT hardware.
