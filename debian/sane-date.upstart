@@ -1,0 +1,13 @@
+# sane-date - adjust system clock to sane values
+#
+# The hwclock task adjusts the system clock when the hardware clock is
+# set to localtime (e.g. when dual-booting with Windows), and also
+# ensures that the system timezone is set so that timestamps are written
+# to FAT devices.
+
+description     "adjust system clock if hwclock fails"
+
+start on started hwclock
+
+task
+exec /sbin/setsanedate
