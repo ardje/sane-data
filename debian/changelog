@@ -1,3 +1,9 @@
+sane-date (1.2b) unstable; urgency=low
+
+  * Bionic tag
+
+ -- ard <ard@kwaak.net>  Mon, 17 Jun 2019 15:09:36 +0000
+
 sane-date (1.2) unstable; urgency=low
 
   * Aargh, copyright :-(
